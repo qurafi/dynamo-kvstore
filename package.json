@@ -1,0 +1,50 @@
+{
+	"name": "dynamo-kvstore",
+	"version": "1.0.0",
+	"description": "Simple key-value DynamoDB store",
+	"author": "Mohammed Al-Qurafi",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "jest",
+		"prepublishOnly": "npm test"
+	},
+	"keywords": [
+		"dynamodb",
+		"dynamo",
+		"key-value",
+		"store",
+		"db",
+		"database",
+		"nosql",
+		"aws",
+		"aws-sdk",
+		"amazon",
+		"cache",
+		"caching",
+		"session",
+		"hash",
+		"map"
+	],
+	"files": [
+		"lib/",
+		"LICENSE",
+		"README.md"
+	],
+	"license": "MIT",
+	"engines": {
+		"node": ">=6"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.15",
+		"@types/node": "^14.14.2",
+		"@typescript-eslint/eslint-plugin": "^4.5.0",
+		"@typescript-eslint/parser": "^4.5.0",
+		"aws-sdk": "^2.777.0",
+		"eslint": "^7.11.0",
+		"jest": "^26.6.1",
+		"typescript": "^4.0.3"
+	},
+	"peerDependencies": {
+		"aws-sdk": "2.x"
+	}
+}
