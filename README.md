@@ -14,7 +14,7 @@ const db = await new DynamoKVStore("test", config);
 // Don't forget to check region also
 
 store.cacheTimeout = -1; // always use cache
-store.cacheTimeout = 0; // always get the new value from databse
+store.cacheTimeout = 0; // always get the new value from database
 store.cacheTimeout = 1000; // custom timeout in ms
 
 // the value should be a valid DynamoDB Attribute
@@ -23,7 +23,7 @@ await db.set("foo", "bar");
 let v = await db.get("foo");
 console.log(v);
 
-// or directly
+// or directly If it's not class reserved property
 await db.foo;
 
 await db.delete("foo");

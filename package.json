@@ -1,9 +1,17 @@
 {
 	"name": "dynamo-kvstore",
 	"version": "1.0.0",
-	"description": "Simple key-value DynamoDB store",
+	"description": "Simple DynamoDB key-value promise-based store for Node.js with in-memory caching.",
 	"author": "Mohammed Al-Qurafi",
 	"main": "lib/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mhmd-22/dynamo-kvstore.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mhmd-22/dynamo-kvstore/issues"
+	},
+	"homepage": "https://github.com/mhmd-22/dynamo-kvstore#readme",
 	"scripts": {
 		"test": "jest",
 		"prepublishOnly": "npm test"
