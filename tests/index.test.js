@@ -1,5 +1,5 @@
 /* eslint-disable */
-const DynamoKVStore = require("./");
+const DynamoKVStore = require("../lib");
 
 const TableName = "test";
 const config = {
