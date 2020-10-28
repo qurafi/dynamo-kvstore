@@ -15,7 +15,7 @@ async function main() {
 		db.cacheTimeout = 1000;
 
 		// the value should be a valid DynamoDB Attribute
-		await db.set("foo", { hello: "world", key: "value" });
+		await db.set("foo", "bar");
 
 		let v = await db.get("foo");
 		console.log(v);
