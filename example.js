@@ -10,9 +10,12 @@ async function main() {
 		// New table will be created if not exists
 		// configs are passed to DocumentClient
 		// Don't forget to check region also
-		const db = await new DynamoKVStore("test", config);
+		console.log("connected to database...");
 
+		const db = await new DynamoKVStore("test2", config);
 		db.cacheTimeout = 1000;
+
+		console.log("connected!");
 
 		// the value should be a valid DynamoDB Attribute
 		await db.set("foo", "bar");
